@@ -1,0 +1,23 @@
+{
+  "total": 2100,
+  "byReason": {
+    "argument_receiver": 99,
+    "caller_receiver": 47,
+    "core_candidate_missing_target_object": 12,
+    "destructured_variable_receiver": 362,
+    "dynamic_property": 235,
+    "expression_receiver": 71,
+    "function_return_receiver": 22,
+    "missing_object": 1,
+    "no_matching_property": 23,
+    "player_receiver": 278,
+    "property_receiver": 7,
+    "runtime_object_function_receiver": 161,
+    "runtime_object_receiver": 116,
+    "runtime_property_chain_receiver": 25,
+    "unbound_variable_receiver": 11,
+    "unknown_flow_receiver": 348,
+    "validated_runtime_object_receiver": 130,
+    "variable_receiver": 152
+  }
+}

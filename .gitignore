@@ -1,0 +1,14 @@
+node_modules/
+dist/
+tmp/
+reports/
+toastcore/
+vendor/node_modules/
+vendor/tree-sitter/build/
+index.json
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.tgz
+*.log

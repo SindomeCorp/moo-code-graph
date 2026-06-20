@@ -1,0 +1,7 @@
+{"kind":"object","objectId":0,"id":"#0","parents":["#-1"],"children":["#1"],"recycled":false}
+{"kind":"object","objectId":1,"id":"#1","parents":["#-1"],"children":["#20","#30"],"recycled":false}
+{"kind":"object","objectId":20,"id":"#20","parents":["#1"],"children":[],"recycled":false}
+{"kind":"object","objectId":30,"id":"#30","owner":"#20","location":"#40","parents":["#1"],"children":["#40"],"contents":["#40"],"recycled":false}
+{"kind":"object","objectId":40,"id":"#40","owner":"#20","parents":["#30"],"children":[],"recycled":false}
+{"kind":"object","objectId":50,"id":"#50","parents":["#51"],"children":["#51"],"recycled":false}
+{"kind":"object","objectId":51,"id":"#51","parents":["#50"],"children":["#50"],"recycled":false}

@@ -1,0 +1,28 @@
+name: ToastCore Regression
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * *"
+
+jobs:
+  toastcore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm install
+      - run: npm run build
+      - run: npm run typecheck
+      - run: npm run test:toastcore -- --refresh
+      - run: npm run audit:graph -- ./tmp/graph-toastcore
+      - run: node dist/cli.js resolve ./tmp/graph-toastcore --extract ./tmp/extract-toastcore --out ./tmp/resolved-toastcore --overwrite --quiet
+      - run: npm run audit:resolved -- ./tmp/resolved-toastcore
+      - run: npm run check:toastcore-unresolved -- ./tmp/resolved-toastcore
+      - run: npm run check:toastcore-unresolved-properties -- ./tmp/resolved-toastcore
+      - run: npm run check:toastcore-coverage -- ./tmp/resolved-toastcore
+      - run: node dist/cli.js report unresolved ./tmp/resolved-toastcore --top 25 --examples 10
+      - run: node dist/cli.js report coverage ./tmp/resolved-toastcore

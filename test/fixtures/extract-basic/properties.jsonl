@@ -1,0 +1,10 @@
+{"kind":"property_definition","id":"#0.root_status","objectId":0,"object":"#0","name":"root_status","definitionIndex":0}
+{"kind":"property_definition","id":"#1.inherited","objectId":1,"object":"#1","name":"inherited","definitionIndex":0}
+{"kind":"property_definition","id":"#20.foo","objectId":20,"object":"#20","name":"foo","definitionIndex":0}
+{"kind":"property_definition","id":"#20.test","objectId":20,"object":"#20","name":"test","definitionIndex":1}
+{"kind":"property_definition","id":"#1.alias_test","objectId":1,"object":"#1","name":"alias_test","definitionIndex":1}
+{"kind":"property_definition","id":"#30.coreprop","objectId":30,"object":"#30","name":"coreprop","definitionIndex":0}
+{"kind":"property_definition","id":"#30.shared","objectId":30,"object":"#30","name":"shared","definitionIndex":1}
+{"kind":"property_definition","id":"#30.items","objectId":30,"object":"#30","name":"items","definitionIndex":2}
+{"kind":"property_definition","id":"#40.interference_modifier","objectId":40,"object":"#40","name":"interference_modifier","definitionIndex":0}
+{"kind":"property_definition","id":"#40.powered","objectId":40,"object":"#40","name":"powered","definitionIndex":1}

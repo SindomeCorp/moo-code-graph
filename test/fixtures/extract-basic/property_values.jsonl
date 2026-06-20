@@ -1,0 +1,1 @@
+{"kind":"property_value","objectId":30,"object":"#30","propertyIndex":2,"name":"items","nameConfidence":"direct","owner":"#20","permissionsRaw":5,"permissions":["read","write"],"value":{"type":"list","objectRefs":["#40"],"truncated":false,"redacted":false}}

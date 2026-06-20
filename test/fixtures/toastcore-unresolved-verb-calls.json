@@ -1,0 +1,292 @@
+[
+  {
+    "ref": "$code_utils:find_verb_named_1_based",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#59",
+    "sourceVerbId": "#113:2",
+    "sourceVerbName": "edit_set_program",
+    "sourcePath": "verb_code/0000000113.0002.edit_set_program.71fccc55253f.moo",
+    "sourceLine": "loc = $code_utils:find_verb_named_1_based(object, verbname);",
+    "line": 43,
+    "column": 6
+  },
+  {
+    "ref": "$code_utils:find_verb_named_1_based",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#59",
+    "sourceVerbId": "#113:2",
+    "sourceVerbName": "edit_set_program",
+    "sourcePath": "verb_code/0000000113.0002.edit_set_program.71fccc55253f.moo",
+    "sourceLine": "loc = $code_utils:find_verb_named_1_based(object, verbname, loc + 1);",
+    "line": 45,
+    "column": 6
+  },
+  {
+    "ref": "$code_utils:highlight_syntax",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#59",
+    "sourceVerbId": "#122:20",
+    "sourceVerbName": "cmd_list",
+    "sourcePath": "verb_code/0000000122.0020.cmd_list.8e3393edadc3.moo",
+    "sourceLine": "list_text = $code_utils:highlight_syntax(state.text[start..end]);",
+    "line": 32,
+    "column": 12
+  },
+  {
+    "ref": "$code_utils:named_args_to_code",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#59",
+    "sourceVerbId": "#113:2",
+    "sourceVerbName": "edit_set_program",
+    "sourcePath": "verb_code/0000000113.0002.edit_set_program.71fccc55253f.moo",
+    "sourceLine": "lines = {@code[1], @$code_utils:named_args_to_code(named), @code[2]};",
+    "line": 85,
+    "column": 20
+  },
+  {
+    "ref": "$code_utils:split_verb_code",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#59",
+    "sourceVerbId": "#113:2",
+    "sourceVerbName": "edit_set_program",
+    "sourcePath": "verb_code/0000000113.0002.edit_set_program.71fccc55253f.moo",
+    "sourceLine": "code = $code_utils:split_verb_code(lines);",
+    "line": 84,
+    "column": 7
+  },
+  {
+    "ref": "$command_utils:menu",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#56",
+    "sourceVerbId": "#122:23",
+    "sourceVerbName": "cmd_paste_letter",
+    "sourcePath": "verb_code/0000000122.0023.cmd_paste_letter.a214664be141.moo",
+    "sourceLine": "letter = letters[$command_utils:menu(letters)];",
+    "line": 12,
+    "column": 17
+  },
+  {
+    "ref": "$cu:yes_or_no",
+    "reason": "no_core_candidate",
+    "sourceVerbId": "#58:37",
+    "sourceVerbName": "@remove-option",
+    "sourcePath": "verb_code/0000000058.0037.remove-option.f97a70df6c3b.moo",
+    "sourceLine": "if ($cu:yes_or_no(tostr(\"Really delete option '\", dobjstr, \" from \", $string_utils:nn(package), \"?\")) == 1)",
+    "line": 13,
+    "column": 4
+  },
+  {
+    "ref": "$local:per_player_daily_scan",
+    "reason": "core_candidate_missing_target_object",
+    "receiverObject": "#-1",
+    "sourceVerbId": "#79:31",
+    "sourceVerbName": "measurement_task_body",
+    "sourcePath": "verb_code/0000000079.0031.measurement_task_body.d0d1d0b4c6ae.moo",
+    "sourceLine": "$local:per_player_daily_scan(who);",
+    "line": 69,
+    "column": 0
+  },
+  {
+    "ref": "$mail_agent:send_messsage",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#46",
+    "sourceVerbId": "#10:46",
+    "sourceVerbName": "connection_name_lookup",
+    "sourcePath": "verb_code/0000000010.0046.connection_name_lookup.7c869d052c12.moo",
+    "sourceLine": "$mail_agent:send_messsage(this, $wiz_utils.gripe_recipients, {\"connection_name_lookup error\", $wiz_utils.gripe_recipients}, {result[\"error\"], result[\"message\"]});",
+    "line": 11,
+    "column": 0
+  },
+  {
+    "ref": "$spell:interactive_spellcheck",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#32",
+    "sourceVerbId": "#122:0",
+    "sourceVerbName": "editor",
+    "sourcePath": "verb_code/0000000122.0000.editor.a3ca91e553ff.moo",
+    "sourceLine": "state.text = $spell:interactive_spellcheck(state.text);",
+    "line": 103,
+    "column": 13
+  },
+  {
+    "ref": "feature:player_disconnected",
+    "reason": "no_matching_content_item_candidate",
+    "candidateObjects": [
+      "#90",
+      "#89"
+    ],
+    "compositionKind": "feature_list_hook",
+    "optionalHookHandled": true,
+    "sourceVerbId": "#88:32",
+    "sourceVerbName": "disfunc",
+    "sourcePath": "verb_code/0000000088.0032.disfunc.f41500dcaf1a.moo",
+    "sourceLine": "feature:player_disconnected(player, @args);",
+    "line": 10,
+    "column": 0
+  },
+  {
+    "ref": "this:a",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#69",
+    "sourceVerbId": "#69:6",
+    "sourceVerbName": "E_VERBNF",
+    "sourcePath": "verb_code/0000000069.0006.e_verbnf.11b8b47c2095.moo",
+    "sourceLine": "this:a();",
+    "line": 1,
+    "column": 0
+  },
+  {
+    "ref": "this:approved_for_network",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#72",
+    "sourceVerbId": "#72:10",
+    "sourceVerbName": "email_will_fail",
+    "sourcePath": "verb_code/0000000072.0010.email_will_fail.d5c56f9887a2.moo",
+    "sourceLine": "if (!this:approved_for_network(caller_perms()))",
+    "line": 10,
+    "column": 5
+  },
+  {
+    "ref": "this:examine_commands_ok",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#1",
+    "sourceVerbId": "#1:25",
+    "sourceVerbName": "examine_verbs",
+    "sourcePath": "verb_code/0000000001.0025.examine_verbs.acd7feb985ca.moo",
+    "sourceLine": "commands_ok = `this:examine_commands_ok(who) ! ANY => 0';",
+    "line": 7,
+    "column": 15
+  },
+  {
+    "ref": "this:expunge_rmm",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#6",
+    "sourceVerbId": "#6:2",
+    "sourceVerbName": "disfunc",
+    "sourcePath": "verb_code/0000000006.0002.disfunc.b5e19864271d.moo",
+    "sourceLine": "this:expunge_rmm();",
+    "line": 3,
+    "column": 0
+  },
+  {
+    "ref": "this:get_current_message",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#6",
+    "sourceVerbId": "#6:84",
+    "sourceVerbName": "news",
+    "sourcePath": "verb_code/0000000006.0084.news.0789817de09c.moo",
+    "sourceLine": "cur = this:get_current_message($news) || {0, 0};",
+    "line": 10,
+    "column": 6
+  },
+  {
+    "ref": "this:init_session",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#50",
+    "sourceVerbId": "#50:36",
+    "sourceVerbName": "invoke",
+    "sourcePath": "verb_code/0000000050.0036.invoke.34bb6550a770.moo",
+    "sourceLine": "this:init_session(player in this.active, @spec);",
+    "line": 41,
+    "column": 0
+  },
+  {
+    "ref": "this:kill_aux_wizard_parse",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#58",
+    "sourceVerbId": "#58:8",
+    "sourceVerbName": "@kill",
+    "sourcePath": "verb_code/0000000058.0008.kill.740352962f35.moo",
+    "sourceLine": "result = this:kill_aux_wizard_parse(@args[2..$]);",
+    "line": 37,
+    "column": 9
+  },
+  {
+    "ref": "this:lookup_room",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#6",
+    "sourceVerbId": "#6:87",
+    "sourceVerbName": "@move-new",
+    "sourcePath": "verb_code/0000000006.0087.move-new.ed65bf3386e2.moo",
+    "sourceLine": "iobj = this:lookup_room(iobjstr);",
+    "line": 17,
+    "column": 7
+  },
+  {
+    "ref": "this:message_body_by_index",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#45",
+    "sourceVerbId": "#45:39",
+    "sourceVerbName": "annotate_message_seq",
+    "sourcePath": "verb_code/0000000045.0039.annotate_message_seq.d0072c990b1e.moo",
+    "sourceLine": "body = this:message_body_by_index(i);",
+    "line": 9,
+    "column": 7
+  },
+  {
+    "ref": "this:parse_invoke",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#50",
+    "sourceVerbId": "#50:36",
+    "sourceVerbName": "invoke",
+    "sourcePath": "verb_code/0000000050.0036.invoke.34bb6550a770.moo",
+    "sourceLine": "spec = this:parse_invoke(@args);",
+    "line": 36,
+    "column": 7
+  },
+  {
+    "ref": "this:set_name",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#108",
+    "sourceVerbId": "#108:0",
+    "sourceVerbName": "set_connection",
+    "sourcePath": "verb_code/0000000108.0000.set_connection.8564dd16d364.moo",
+    "sourceLine": "this:set_name(\"session for \" + tostr(this.connection));",
+    "line": 2,
+    "column": 0
+  },
+  {
+    "ref": "this:teleport",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#6",
+    "sourceVerbId": "#6:87",
+    "sourceVerbName": "@move-new",
+    "sourcePath": "verb_code/0000000006.0087.move-new.ed65bf3386e2.moo",
+    "sourceLine": "this:teleport(dobj, iobj);",
+    "line": 25,
+    "column": 0
+  },
+  {
+    "ref": "this:tell_contents",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#1",
+    "sourceVerbId": "#1:24",
+    "sourceVerbName": "examine_contents",
+    "sourcePath": "verb_code/0000000001.0024.examine_contents.5831fc1a5459.moo",
+    "sourceLine": "this:tell_contents(this.contents, this.ctype);",
+    "line": 6,
+    "column": 0
+  },
+  {
+    "ref": "this:valid_email_address",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#72",
+    "sourceVerbId": "#72:10",
+    "sourceVerbName": "email_will_fail",
+    "sourcePath": "verb_code/0000000072.0010.email_will_fail.d5c56f9887a2.moo",
+    "sourceLine": "if (!this:valid_email_address(email))",
+    "line": 13,
+    "column": 5
+  },
+  {
+    "ref": "this:verify_email_address",
+    "reason": "no_matching_direct_or_inherited_verb",
+    "receiverObject": "#72",
+    "sourceVerbId": "#72:10",
+    "sourceVerbName": "email_will_fail",
+    "sourcePath": "verb_code/0000000072.0010.email_will_fail.d5c56f9887a2.moo",
+    "sourceLine": "elseif ((result = this:verify_email_address(email)) == E_INVARG)",
+    "line": 15,
+    "column": 18
+  }
+]

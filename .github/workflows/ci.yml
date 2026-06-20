@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm install
+      - run: npm run build
+      - run: npm run typecheck
+      - run: npm test
+      - run: node dist/cli.js index ./test/fixtures/extract-basic --out ./tmp/graph-basic --overwrite --quiet
+      - run: npm run audit:graph -- ./tmp/graph-basic
+      - run: node dist/cli.js resolve ./tmp/graph-basic --extract ./test/fixtures/extract-basic --out ./tmp/resolved-basic --overwrite --quiet
+      - run: npm run audit:resolved -- ./tmp/resolved-basic
+      - run: node dist/cli.js report unresolved ./tmp/resolved-basic --top 5 --examples 10
+      - run: node dist/cli.js report coverage ./tmp/resolved-basic

@@ -1,0 +1,83 @@
+{
+  "name": "@sindomecorp/moo-code-graph",
+  "version": "0.1.0",
+  "description": "Raw MOO code fact extraction for ToastStunt extractor output.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "moo-code-graph": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"dist/test/**/*.js\"",
+    "dev:test": "tsx --test \"test/**/*.test.ts\"",
+    "audit:graph": "tsx scripts/audit-graph-facts.ts",
+    "audit:resolved": "tsx scripts/audit-resolved-edges.ts",
+    "analyze:unresolved": "tsx scripts/analyze-unresolved.ts",
+    "check:toastcore-unresolved": "tsx scripts/check-toastcore-unresolved-verb-calls.ts",
+    "check:toastcore-unresolved-properties": "tsx scripts/check-toastcore-unresolved-property-summary.ts",
+    "check:toastcore-coverage": "tsx scripts/check-toastcore-coverage-summary.ts",
+    "scaffold-toastcore": "tsx scripts/scaffold-toastcore.ts",
+    "test:toastcore": "tsx scripts/scaffold-toastcore.ts",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "moo",
+    "toaststunt",
+    "tree-sitter",
+    "code-graph"
+  ],
+  "author": "SindomeCorp",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@sindomecorp/toaststunt-db-extractor": "^0.1.4",
+    "commander": "^14.0.2",
+    "cytoscape": "^3.34.0",
+    "cytoscape-cola": "^2.5.1",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "cytoscape-dagre": "^4.0.0",
+    "cytoscape-euler": "^1.2.4",
+    "cytoscape-fcose": "^2.2.0",
+    "cytoscape-klay": "^3.1.4",
+    "dagre": "^0.8.5",
+    "express": "^5.2.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tree-sitter": "file:vendor/tree-sitter",
+    "tree-sitter-moo": "^0.2.15",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.0",
+    "vite": "^8.0.16"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SindomeCorp/moo-code-graph.git"
+  }
+}

@@ -1,0 +1,22 @@
+reports:
+  codeInsights:
+    minComplexity: 15
+    minLines: 120
+    minNesting: 4
+    minPropertyWrites: 10
+    minDynamicAccesses: 5
+    minFanOut: 25
+    minInlineErrorCount: 8
+    minRepeatedStringCount: 3
+    minRepeatedStringLength: 8
+    minNormalizedDuplicateLines: 5
+    includeUnusedDestructuringArgsWhenOtherArgsAreUsed: false
+  deadCode:
+    unusedVerbs:
+      programmaticOnly: true
+      requireExecute: false
+  mutationInvariants:
+    enabled: true
+    ignoreProperties: []
+    ignoreSourceVerbs: []
+    ignoreBuckets: []

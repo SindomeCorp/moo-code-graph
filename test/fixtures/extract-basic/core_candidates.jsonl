@@ -1,0 +1,7 @@
+{"kind":"core_candidate","symbol":"$string_utils","property":"string_utils","sourceObject":"#0","target":"#30","confidence":"object-property-on-root"}
+{"kind":"core_candidate","symbol":"$ou","property":"ou","sourceObject":"#0","target":"#30","confidence":"object-property-on-root"}
+{"kind":"core_candidate","symbol":"$object_utils","property":"object_utils","sourceObject":"#0","target":"#30","confidence":"object-property-on-root"}
+{"kind":"core_candidate","symbol":"$recycler","property":"recycler","sourceObject":"#0","target":"#30","confidence":"object-property-on-root"}
+{"kind":"core_candidate","symbol":"$command_utils","property":"command_utils","sourceObject":"#0","target":"#30","confidence":"object-property-on-root"}
+{"kind":"core_candidate","symbol":"$freq_booster","property":"freq_booster","sourceObject":"#0","target":"#40","confidence":"object-property-on-root"}
+{"kind":"core_candidate","symbol":"$player","property":"player","sourceObject":"#0","target":"#40","confidence":"object-property-on-root"}
