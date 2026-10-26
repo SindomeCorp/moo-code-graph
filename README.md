@@ -453,3 +453,14 @@ Comments use the durable MOO string-literal comment syntax supported by `tree-si
 ```moo
 "This is a comment statement.";
 ```
+
+## Node.js 26 validation
+
+Validated on Linux with **Node.js 26.12.1** on **2026-10-26**. The TypeScript/Vite build and compiled unit/integration tests passed using test fixtures.
+
+With Node.js 26.12.1 selected, reproduce the checks with:
+
+```sh
+npm run build
+npm test
+```
